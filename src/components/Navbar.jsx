@@ -20,7 +20,7 @@ export default function Navbar() {
         direction="row"
         justifyContent="space-around"
       >
-        <NavLink to={`/`}>
+        <NavLink to={`/mr-row`}>
           <AiFillHome
             fontSize={40}
             className="hover:text-gray-300 text-white"
