@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mr-row/static/css/main.c5177027.css",
+    "main.js": "/mr-row/static/js/main.80507670.js",
+    "static/js/787.372cc9cf.chunk.js": "/mr-row/static/js/787.372cc9cf.chunk.js",
+    "index.html": "/mr-row/index.html",
+    "main.c5177027.css.map": "/mr-row/static/css/main.c5177027.css.map",
+    "main.80507670.js.map": "/mr-row/static/js/main.80507670.js.map",
+    "787.372cc9cf.chunk.js.map": "/mr-row/static/js/787.372cc9cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5177027.css",
+    "static/js/main.80507670.js"
+  ]
+}
