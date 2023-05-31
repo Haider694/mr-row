@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Imag2 from "../Assets/images/bargar1.jpg";
 import { AiFillPlusCircle, AiFillMinusCircle } from "react-icons/ai";
 import { BsFillTagFill } from "react-icons/bs";
 import { TbCurrencyRupee } from "react-icons/tb";
@@ -47,12 +46,14 @@ const Cart = () => {
   };
   const calculateTotal = () => {
     let total = 0;
-    state.map((item) => (total += item?.totalprice));
+    state.map((item) => (total += Number (item?.totalprice)));
+    console.log(total)
     return total;
+    
   };
   const amountToPay = () => {
     let total = 0;
-    state.map((item) => (total += item?.totalprice));
+    state.map((item) => (total += Number(item?.totalprice)));
     total += 30;
     return total;
   };

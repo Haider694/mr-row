@@ -1,52 +1,79 @@
-import React from 'react'
-import Imag4 from '../Assets/images/images.jpg';
-import { BiQrScan } from 'react-icons/bi'
-
+import React from "react";
+import { BiQrScan } from "react-icons/bi";
+import { Box, Grid, IconButton, Stack, Typography } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 export default function OffersForYou() {
-    return (
-        <div className='w-auto h-auto mt-2'>
-            <div className='grid gap-2 justify-items-center grid-cols-1 '>
-                <div className='flex  w-full gap-2 '>
-                    <div className='basis-4/5'>
-                        <h2 className='text-xl'>Offers for you</h2>
-                    </div>
-                    <div className=' basis-1/5'>
-                        <p className='text-xl text-right text-yellow-500'>See All</p>
-                    </div>
+  return (
+    <Box m={2}>
+    <NavLink to="/mr-rao">
+    <Stack>
+        <Box width="100%" height="35px">
+          <Stack width="100%" height="15px" direction="row">
+            <Box width="70%" height="10px">
+              <Typography textAlign="start" variant="h6">
+                <b>Offers for you</b>
+              </Typography>
+            </Box>
+            <Box width="30%" height="10px" ml={2}>
+              <Typography variant="h6" color="#f3d15b" textAlign="end">
+                <b>See all</b>
+              </Typography>
+            </Box>
+          </Stack>
+        </Box>
+        <Box width="100%" height="190px" mt={2}>
+          <Stack width="100%" height="160px" direction="row" overflow="scroll" spacing={2}>
+            <Grid bgcolor="#f5f3f3" width="100%" height="150px" flexDirection="row" >
+              <Box
+                width="300px"
+                height="150px"
+                sx={{ border: "1px solid lightgray", borderRadius: "15px" }}
+              ></Box>
+            </Grid>
+            <Grid bgcolor="#f5f3f3" width="100%" height="150px" flexDirection="row" >
+              <Box
+                width="300px"
+                height="150px"
+                sx={{ border: "1px solid lightgray", borderRadius: "15px" }}
+              ></Box>
+            </Grid>
+            <Grid bgcolor="#f5f3f3" width="100%" height="150px" flexDirection="row" >
+              <Box
+                width="300px"
+                height="150px"
+                sx={{ border: "1px solid lightgray", borderRadius: "15px" }}
+              ></Box>
+            </Grid>
+          </Stack>
+        </Box>
+        <Box width="100%" height="20px">
+          <Stack width="100%" height="20px" direction="row">
+            <Box width="50%">
+              <IconButton>
+                <BiQrScan
+                  fontSize={30}
+                  color="#f3d15b"
+                  className=" hover:text-gray-300 text-white"
+                />
+              </IconButton>
+              <Typography variant="p">SCAN & CONNECT</Typography>
+            </Box>
+            <Box width="50%">
+              <IconButton>
+                <BiQrScan
+                  fontSize={30}
+                  color="#f3d15b"
+                  className=" hover:text-gray-300 text-white"
+                />
+              </IconButton>
+              <Typography variant="p">SCAN & CONNECT</Typography>
+            </Box>
+          </Stack>
+        </Box>
+      </Stack>
+    </NavLink>
 
-                </div>
-                <div className="w-full grid-col-1  ">
-                    <div className='snap-x flex w-full gap-2 overflow-x-scroll snap-mandatory'>
-                        <div className="snap-start w-full flex-shrink-0 grid item-center mb-2 h-auto ">
-                            <img alt="Offerfor you" className='w-full' src={Imag4} />
-                        </div>
-                        <div className=" snap-start w-full flex-shrink-0 grid item-center mb-2 h-auto">
-                            <img alt="Offerfor you" className='w-full' src={Imag4} />
-                        </div>
-                        <div className="snap-start w-full flex-shrink-0 grid item-center mb-2 h-auto">
-                            <img alt="Offerfor you" className='w-full' src={Imag4} />
-                        </div>
-                        <div className="snap-start w-full flex-shrink-0 grid item-center mb-2 h-auto ">
-                            <img alt="Offerfor you" className='w-full' src={Imag4} />
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div className='flex flex-row gap-4 justify-between m-2 '>
-                    <div className='w-full flex flex-row justify-center  bg-gray-100'>
-                        <div className=''></div>
-                        <div className=' '>
-                            <button className='flex p-2 gap-1 bg-yellow-500 rounded-2xl'>
-                                <BiQrScan fontSize={30} className=' hover:text-gray-300 text-white'  /><p className='text-2xl text-white'>SCAN & CONNECT</p>
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    )
+    </Box>
+  );
 }

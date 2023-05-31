@@ -8,7 +8,6 @@ import Cart from "./Cart";
 
 export default function AddCartShow() {
   const state = useSelector((state) => state.cart);
-  <Route path="/pizza" element={<Cart />} />;
   return (
     <>
       <Box
